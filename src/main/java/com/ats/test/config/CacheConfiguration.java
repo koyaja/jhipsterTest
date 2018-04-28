@@ -42,6 +42,18 @@ public class CacheConfiguration {
             cm.createCache(com.ats.test.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.ats.test.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.ats.test.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.ats.test.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
